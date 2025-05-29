@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="17" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-29T11:57:28 IST" name="RestAssuredlearn" finished-at="2025-05-29T11:57:32 IST" duration-ms="3739">
+    <groups>
+    </groups>
+    <test started-at="2025-05-29T11:57:28 IST" name="Test" finished-at="2025-05-29T11:57:32 IST" duration-ms="3739">
+      <class name="RestAssuredlearn_tc.diffpostreq">
+        <test-method signature="pojoclass()[pri:1, instance:RestAssuredlearn_tc.diffpostreq@7ed7259e]" started-at="2025-05-29T11:57:31 IST" name="pojoclass" finished-at="2025-05-29T11:57:31 IST" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pojoclass -->
+      </class> <!-- RestAssuredlearn_tc.diffpostreq -->
+      <class name="restassured_paramters.parampetrs">
+        <test-method signature="testlog()[pri:0, instance:restassured_paramters.parampetrs@3d51f06e]" started-at="2025-05-29T11:57:30 IST" name="testlog" finished-at="2025-05-29T11:57:31 IST" duration-ms="544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlog -->
+      </class> <!-- restassured_paramters.parampetrs -->
+      <class name="RestAssuredlearn_tc.demorest">
+        <test-method signature="test1()[pri:0, instance:RestAssuredlearn_tc.demorest@72f926e6]" started-at="2025-05-29T11:57:28 IST" name="test1" finished-at="2025-05-29T11:57:29 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2post()[pri:0, instance:RestAssuredlearn_tc.demorest@72f926e6]" started-at="2025-05-29T11:57:29 IST" name="test2post" finished-at="2025-05-29T11:57:30 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2post -->
+      </class> <!-- RestAssuredlearn_tc.demorest -->
+      <class name="RestAssuredlearn_tc.AppTest">
+        <test-method signature="getusers()[pri:1, instance:RestAssuredlearn_tc.AppTest@647e447]" started-at="2025-05-29T11:57:31 IST" name="getusers" finished-at="2025-05-29T11:57:32 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getusers -->
+      </class> <!-- RestAssuredlearn_tc.AppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- RestAssuredlearn -->
+</testng-results>

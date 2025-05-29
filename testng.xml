@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RestAssuredlearn">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="RestAssuredlearn_tc.demorest"/>
+      <class name="restassured_paramters.parampetrs"/>
+      <class name="RestAssuredlearn_tc.diffpostreq"/>
+      <class name="RestAssuredlearn_tc.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
