@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+      <class name="apichaining.createuser"/>
+      <class name="apichaining.get"/>
+      <class name="apichaining.update"/>
+      <class name="apichaining.delete"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
