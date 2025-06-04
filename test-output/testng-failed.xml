@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssuredlearn.RestAssuredlearn.AppTest">
+      <class name="apichaining.delete">
         <methods>
-          <include name="postuser"/>
-          <include name="upadteuser"/>
+          <include name="getuser"/>
         </methods>
-      </class> <!-- RestAssuredlearn.RestAssuredlearn.AppTest -->
+      </class> <!-- apichaining.delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

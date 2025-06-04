@@ -14,24 +14,27 @@ public class update {
 	@Test
 	public void modify(ITestContext context) {
 		
+		String BEARER_TOKEN="a8dfa7b0735a6351491b559d136bbceacb23fe6a97d5b7ddd9a54a72fea54df9";
+		
 		int id = (Integer) context.getAttribute("userid");
 		
 		Faker fk = new Faker();
 		
 		JSONObject data = new JSONObject();
+		data.put("name", fk.name().fullName());
+		data.put("email", fk.internet().emailAddress());
+		data.put("gender","male");
+		data.put("status", "inactive");
 		
-		data.put("name",fk.name().fullName());
-		data.put("job", "cricketer");
 		
-		
-		
-		given()
-		   .header("x-api-key","reqres-free-v1")
-		   .param("path",id)
-		   .body(data.toString())
+		given().
+		headers("Authorization","Bearer "+BEARER_TOKEN)
+		   .contentType("application/json")
+		   .body(data.toString())	
+		   .pathParam("id", id)
 		   
 		.when()
-		    .put("https://reqres.in/api/users/{path}")
+		    .put("https://gorest.co.in/public/v2/users/{id}")
 		    
 		 .then()
 		     .log().all();

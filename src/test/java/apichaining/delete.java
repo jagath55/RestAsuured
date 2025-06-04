@@ -13,17 +13,20 @@ public class delete {
 	@Test
 	public void getuser(ITestContext context) {
 		
-		int id =(Integer) context.getAttribute("userid");
+       String BEARER_TOKEN="a8dfa7b0735a6351491b559d136bbceacb23fe6a97d5b7ddd9a54a72fea54df9";
+		
+		int id = (Integer) context.getAttribute("userid");
+		
 		given()
-		   .header("x-api-key","reqres-free-v1")
-		   .param("path",id)
+		.headers("Authorization","Bearer "+BEARER_TOKEN)
+		.pathParam("path",id)
 		   
 		.when()
-		    .delete("https://reqres.in/api/users/{path}")
+		    .delete("https://gorest.co.in/public/v2/users/{path}")
 		    
 		 .then()
-		     .statusCode(204);
-		
+		   .statusCode(204)
+		.log().all();	
 	}
 
 }

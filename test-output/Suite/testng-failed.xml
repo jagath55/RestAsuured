@@ -3,11 +3,6 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="apichaining.update">
-        <methods>
-          <include name="modify" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- apichaining.update -->
       <class name="apichaining.delete">
         <methods>
           <include name="getuser" invocation-numbers="0"/>

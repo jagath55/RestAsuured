@@ -11,26 +11,33 @@ public class createuser{
 	
 	
 	/*
-	"name": "morpheus",
-    "job": "leader"s
+	"name": "Rep. Dayaamay Iyengar",
+        "email": "iyengar_rep_dayaamay@sporer.test",
+        "gender": "female",
+        "status": "active"
 */
 	@Test
 	public void create(ITestContext context) {
 		
-		Faker fk= new Faker();
-		JSONObject data = new JSONObject();
+		String BEARER_TOKEN="a8dfa7b0735a6351491b559d136bbceacb23fe6a97d5b7ddd9a54a72fea54df9";
 		
+		Faker fk= new Faker();
+		
+		JSONObject data = new JSONObject();
 		data.put("name", fk.name().fullName());
-		data.put("job", "writer");
+		data.put("email", fk.internet().emailAddress());
+		data.put("gender","female");
+		data.put("status", "active");
 		
 		int id =given()
-		   .header("x-api-key","reqres-free-v1")
+		   .headers("Authorization","Bearer "+BEARER_TOKEN)
 		   .contentType("application/json")
 		   .body(data.toString())		   
 	    
 		.when()
-	       .post("https://reqres.in/api/users")
+	       .post("https://gorest.co.in/public/v2/users")
 	       .jsonPath().getInt("id") ;
+	      
 		
 	       
 	       
